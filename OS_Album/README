@@ -1,0 +1,17 @@
+album.c scale all the images in different processes at first.
+Then in another loop, display each scaled image, ask the user for rotate
+information and caption, and do rotation.
+
+albumOneLoop.c work on target images one by one. Scale one image to 10%,
+display, ask for rotation, do rotation, and ask for caption. ALl in one loop.
+
+Input: (./album or ./albumOneLoop) + (.jpg/.png/.jpeg files or a folder)
+
+The program will ask the user for the degree to rotate. Y/N is also acceptable.
+The default degree is 90. Other input degree will be converted to a
+valid degree number.
+
+The program will ask the user for a caption. The default name is the original
+name of the file.
+
+Output: album.html
