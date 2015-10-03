@@ -1,0 +1,22 @@
+Two different implementations are used by bridge.c and bridgeOne.c.
+Both solved the problem of starvation.
+
+IMPORTANT: Please use the bridge.c as the one to grade as I think
+	   my implementation of bridge.c is better.
+
+bridge.c: Two condition variables are used. One for cars to Hanover,
+	  and the other one for cars to Norwich.
+
+bridgeOne.c: Only one condition variable is used.
+
+The way to avoid starvation is to calculate the number of cars goes
+to one direction. If this number is above a threshod and there are
+cars waiting to go the opposite direction, we will change the allowed
+direction on the bridge.
+
+Input: Please provide the max number of cars on bridge, number of
+       cars to Norwich, and number of cars to Hanover.
+       eg. ./bridge 3 25 1
+
+Output: Once there is a car going on the bridge, a new line will be
+	printed to update the information.
